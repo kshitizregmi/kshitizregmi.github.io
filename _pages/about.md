@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Kshitiz Regmi"
+title: "About"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -15,9 +15,9 @@ Currently, I am working on Fusemachines Nepal as a machine learning engineer. Pr
 
 # Research Interest
 
-    Machine Learning/Deep Learning
-    Computer Vision
-    Natural Language Processing
+- Machine Learning/Deep Learning
+- Computer Vision
+- Natural Language Processing
 
 
 # Contact
