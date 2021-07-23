@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Kshitiz Regmi"
-  avatar           : "images/myimg.jpg"
+  avatar           : "myimg.jpg"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Kathmandu"
   employer         :
