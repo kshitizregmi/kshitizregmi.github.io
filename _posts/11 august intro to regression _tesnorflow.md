@@ -1,6 +1,6 @@
 ---
 title: 'Introduction to Linear Regression Using Tensorflow'
-date: 2012-08-14
+date: 2021-08-11
 permalink: /posts/2021/08/tf_regression/
 tags:
   - tensorflow
