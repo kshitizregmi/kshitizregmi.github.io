@@ -143,9 +143,7 @@ There is only one dense layer inside the model. Therefore, we can take the first
 
 
 ```python
-
 model.layers[0].get_weights()
-
 ```
 
 
