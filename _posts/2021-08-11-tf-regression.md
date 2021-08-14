@@ -84,7 +84,7 @@ history = model.fit(xs, ys, epochs=100)
     1/1 [==============================] - 0s 4ms/step - loss: 7.4344
     Epoch 4/100
     1/1 [==============================] - 0s 5ms/step - loss: 2.7698
-    ............................................................
+    ...................................................................
     Epoch 90/100
     1/1 [==============================] - 0s 8ms/step - loss: 0.0478
     Epoch 91/100
@@ -134,9 +134,6 @@ Before looking at the value of <img src="https://latex.codecogs.com/svg.latex?\L
 model.layers
 ```
 
-
-
-
     [<tensorflow.python.keras.layers.core.Dense at 0x7fcf12650bd0>]
 
 
@@ -147,9 +144,6 @@ There is only one dense layer inside the model. Therefore, we can take the first
 ```python
 model.layers[0].get_weights()
 ```
-
-
-
 
     [array([[2.0488167]], dtype=float32), array([0.71014404], dtype=float32)]
 
@@ -178,7 +172,13 @@ plt.figure()
 ```
 
     
-<img src="images/../../images/output_22_1.png">
+
+<center>
+<img src = "https://drive.google.com/uc?export=view&id=1fACgLyzIoOokYIJQhiRI1hs1qIbZMrbt" >
+</center>
+
+<!-- https://drive.google.com/file/d//view?usp=sharing
+<img src="images/../../images/output_22_1.png"> -->
 
 
 
@@ -199,9 +199,12 @@ plt.figure()
 
 
 
+<center>
+<img src = "https://drive.google.com/uc?export=view&id=12eAFCs8vZb8dUvVVBgaQx6At-QdjmRbb" >
+</center>
 
-<img src="images/../../images/output_24_1.png">
-
+<!-- https://drive.google.com/file/d//view?usp=sharing
+<img src="images/../../images/output_24_1.png">-->
 
 
 The zoomed-in picture of loss shows that the loss is sharply decreasing, and it is not constant. Therefore training a model with more epochs will create more accurate results.
