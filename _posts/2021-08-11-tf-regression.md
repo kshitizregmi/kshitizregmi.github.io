@@ -32,6 +32,7 @@ Let's map the relationship between <img src="https://latex.codecogs.com/svg.late
 
 
 
+
 ```python
 import numpy as np
 import tensorflow as tf
@@ -45,7 +46,10 @@ xs = np.array([-1.0, 2.0, 5.0, 7.0 ], dtype=float)
 ys = np.array([-1.0, 5.0, 11.0, 15.0], dtype=float)
 ```
 
+
+
 First, let's Built a Sequential Model that has a Dense layer with 1 Neuron. The input shape is [1] because the input on the Model <img src="https://latex.codecogs.com/svg.latex?\Large&space;x_i" /> is a one-dimensional array.
+
 
 
 ```python
@@ -139,7 +143,9 @@ There is only one dense layer inside the model. Therefore, we can take the first
 
 
 ```python
+
 model.layers[0].get_weights()
+
 ```
 
 
@@ -170,14 +176,6 @@ plt.title('MSE loss')
 plt.legend()
 plt.figure()
 ```
-
-
-
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
 
     
 <img src="images/../../images/output_22_1.png">
@@ -268,11 +266,6 @@ model.fit(xs, ys, epochs=1500, callbacks = callbacks)
 
 
 
-
-    <tensorflow.python.keras.callbacks.History at 0x7fcf0a4c8e50>
-
-
-
 The model training stopped around 1330 epochs. 
 
 We can load the saved model and see the weights associated with it.
@@ -336,7 +329,3 @@ The relationship between <img src="https://latex.codecogs.com/svg.latex?\Large&s
 
 [1] Moroney, L. (2020). Ai and machine learning for coders. " O'Reilly Media, Inc.".
 
-
-```python
-
-```
