@@ -44,8 +44,8 @@ Let's first take the data in an array.
 
 
 ```python
-xs = np.array([-1.0, 2.0, 5.0, 7.0 ], dtype=float)
-ys = np.array([-1.0, 5.0, 11.0, 15.0], dtype=float)
+xi = np.array([-1.0, 2.0, 5.0, 7.0 ], dtype=float)
+yi = np.array([-1.0, 5.0, 11.0, 15.0], dtype=float)
 ```
 
 
@@ -73,7 +73,7 @@ The "sgd" optimizer means that the model will be trained using a simple Stochast
 
 
 ```python
-history = model.fit(xs, ys, epochs=100)
+history = model.fit(xi, yi, epochs=100)
 ```
 
     Epoch 1/100
@@ -239,7 +239,7 @@ Let's train the model up to 1500 epochs.
 ```python
 model = tf.keras.Sequential([tf.keras.layers.Dense(units=1, input_shape=[1])])
 model.compile(optimizer = 'sgd', loss = 'mean_squared_error')
-model.fit(xs, ys, epochs=1500, callbacks = callbacks)
+model.fit(xi, yi, epochs=1500, callbacks = callbacks)
 ```
 
     Epoch 1/1500
@@ -291,7 +291,9 @@ loaded_model.layers[0].get_weights()
 
 
 
-The value of <img src="https://latex.codecogs.com/svg.latex?\Large&space;m = 2.000001" /> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;c = 0.9999955" />. 
+ <img src="https://latex.codecogs.com/svg.latex?\Large&space;m = 2.000001 " /> 
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c = 0.9999955" />. 
 
 Training for additional epochs increased the accuaray of the model. Let's predict the value when <img src="https://latex.codecogs.com/svg.latex?\Large&space;x_i = 10" />.
 
