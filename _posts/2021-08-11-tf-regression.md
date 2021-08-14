@@ -6,6 +6,8 @@ tags:
   - tensorflow
   - regression
   - keras
+  - tensorflow developer
+  - machine learning
 ---
 # Introduction
 
@@ -145,11 +147,18 @@ There is only one dense layer inside the model. Therefore, we can take the first
 model.layers[0].get_weights()
 ```
 
-    [array([[2.0488167]], dtype=float32), array([0.71014404], dtype=float32)]
+    [array([[2.046934]], dtype=float32), array([0.7213231], dtype=float32)]
+
+
+ <img src="https://latex.codecogs.com/svg.latex?\Large&space;m = 2.046934 " /> 
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;c = 0.7213231" />. 
 
 
 
-The value of <img src="https://latex.codecogs.com/svg.latex?\Large&space; m = 2.034481  and c = 0.7952639." />
+
+
+
 If we apply the model computed value of <img src="https://latex.codecogs.com/svg.latex?\Large&space;m" /> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;c" /> in Figure 1 data. The model output is not completely accurate. 
 
 ### Should we train the model for more epochs? 
