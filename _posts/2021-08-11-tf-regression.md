@@ -211,7 +211,7 @@ The zoomed-in picture of loss shows that the loss is sharply decreasing, and it 
 
 ### How many epochs to run when training a model and how to know when to stop?
 
-Tensorflow provides a callbacks mechanism to customize the behavior of a Keras model during training, evaluation, or inference. It means we can monitor model training and evaluation and store the best model using the callbacks.
+Tensorflow provides a callbacks mechanism to customize the behaviour of a Keras model during training, evaluation, or inference. It means we can monitor the evaluation metric on model training and save the best model using the callbacks. The goal of training the model is to minimize the loss. With this, the metric to be monitored would be 'loss'.
 
 For this model, we need to stop early if the loss increases and save the model at its optimal state, i.e., we need a ModelCheckPoint that monitors loss and keeps the best model -- model having lower loss among all.
 
@@ -227,6 +227,7 @@ early_stop = tf.keras.callbacks.EarlyStopping('loss', patience=5)
 ```
 
 The `model_check_point` monitors the loss and saves only that model that has a lower loss. The early stop helps to track the loss of the model. If the loss increases, the  `EarlyStopping` will wait for the five additional epochs from the lowest loss. If it is still rising, the model stops training and saves the best model, i.e., the `ModelCheckPoint ` will store the model having the lowest loss.
+
 
 
 ```python
