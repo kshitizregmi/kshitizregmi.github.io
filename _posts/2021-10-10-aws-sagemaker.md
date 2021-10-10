@@ -54,18 +54,15 @@ In this section, we will use the Amazon SageMaker Notebook instance to build, tr
 # How to start an Amazon SageMaker notebook instance?
 
 1. To create the SageMaker notebook instance, click on search and type *"sagemaker"* as shown in the following figure.
-
 <img src = "https://drive.google.com/uc?export=view&id=1Ny-DCXsID3VDWOzMi63von1VOGNsCF7K" >
 
 2. Click on amazon SageMaker.
-
 <img src = "https://drive.google.com/uc?export=view&id=1mlhErTVb5Aa2RDV-x223HDOqFL6X0g3M" >
 
 3. After clicking on amazon SageMaker, the following window will appear. Click on notebook and then notebook instance. 
 <img src = "https://drive.google.com/uc?export=view&id=121KcUGy9VgCQz_5qwGvBr1cZDbC5RyiC" >
 
 4. To create a notebook instance click on create notebook instance as shown in the following figure.
-
 <img src = "https://drive.google.com/uc?export=view&id=1-aAZqcg0waJzx-vfB366BwSkMoQSkEeN" >
 
 5. After clicking the create notebook instance button, the following window appears. Fill in the necessary details as shown in the figure.
