@@ -9,33 +9,40 @@ redirect_from:
 
 {% include base_path %}
 
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Bachelors of Science in Computer Science and Information Technology (BSc. CSIT) **2016-2021**
+  * Tribhuvan University
   
+Work Experience
+======
+* Machine Learning Engineer at Fusemachines, Nepal **Mar 2021 - present**
+
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+  * Numpy
+  * Pandas
+  * Scikit-learn
+  * Tensorflow
+  * Keras
+  * OpenCV
+  * Spacy
+  * NLTK
+  * ElasticSearch
+  * jupyter
+  * pip
+  * conda
+* Verson Control: git,github
+* Web development: Flask REST API with JSON format
+* AWS cloud: AWS Lambda, Sagemaker notebook instance, S3 buckets, 
+* Databases: MongoDB, SQL, Oracle, Snowflake
+* Latex
 
+
+<!-- 
 Publications
 ======
   <ul>{% for post in site.publications %}
@@ -56,4 +63,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
