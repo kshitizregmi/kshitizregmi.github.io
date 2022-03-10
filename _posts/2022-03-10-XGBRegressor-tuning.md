@@ -332,7 +332,7 @@ for col in X_train.columns:
 
 
     
-![png](../images/output_13_3.png)
+![png](/images/output_13_3.png)
     
 
 
@@ -344,7 +344,7 @@ for col in X_train.columns:
 
 
     
-![png](../images/output_13_5.png)
+![png](/images/output_13_5.png)
     
 
 
