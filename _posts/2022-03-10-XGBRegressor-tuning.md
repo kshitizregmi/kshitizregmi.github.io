@@ -320,7 +320,7 @@ for col in X_train.columns:
 
 
     
-![png](../images/output_13_1.png)
+![png](output_13_1.png)
     
 
 
