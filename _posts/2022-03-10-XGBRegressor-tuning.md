@@ -311,62 +311,33 @@ def diagnostic_plots(df, variable):
 for col in X_train.columns:
     diagnostic_plots(X_train, col)
 ```
-
-    
     
      Feature name is : freq
     
-
-
-
     
 ![png](https://kshitizregmi.github.io/images/output_13_1.png)
-    
 
 
-    
-    
      Feature name is : angle
     
-
-
-
     
 ![png](/images/output_13_3.png)
-    
-
-
     
     
      Feature name is : chord
     
-
-
-
     
 ![png](/images/output_13_5.png)
     
 
-
-    
-    
      Feature name is : velocity
     
-
-
-
     
 ![png](/images/output_13_7.png)
-    
-
-
     
     
      Feature name is : thickness
     
-
-
-
     
 ![png](/images/output_13_9.png)
     
@@ -378,46 +349,24 @@ The above histogram plot shows `velocity and chord` features are categorical. Le
 ```python
 X_train.velocity.nunique(), X_test.velocity.nunique()
 ```
-
-
-
-
     (4, 4)
-
-
 
 
 ```python
 X_train.velocity.unique()
 ```
-
-
-
-
     array([71.3, 55.5, 39.6, 31.7])
-
-
 
 
 ```python
 X_train.chord.nunique(), X_test.chord.nunique()
 ```
-
-
-
-
     (6, 6)
-
-
 
 
 ```python
 X_train.chord.unique()
 ```
-
-
-
-
     array([0.0254, 0.2286, 0.1524, 0.1016, 0.3048, 0.0508])
 
 
@@ -454,20 +403,6 @@ import seaborn as sns
 train_freq , freq_lambda = stats.boxcox(X_train['freq'])
 sns.distplot(train_freq)
 ```
-
-    /usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-      warnings.warn(msg, FutureWarning)
-
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f94d1563910>
-
-
-
-
-    
 ![png](/images/output_22_2.png)
     
 
@@ -480,17 +415,7 @@ Now let's visualize the the correlation between the features on the heatmap plot
 ```python
 plt.figure(figsize=(8,5))
 sns.heatmap(X_train.corr(), annot = True)
-```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f94d2265790>
-
-
-
-
-    
+```  
 ![png](/images/output_25_1.png)
     
 
@@ -515,8 +440,6 @@ sns.boxplot(x = X_train['thickness'])
 plt.title("Box plot showing outliers")
 plt.show()
 ```
-
-
     
 ![png](/images/output_29_0.png)
     
@@ -531,20 +454,6 @@ train_thickness = scaler.transform(X_train[['thickness']]).flatten()
 sns.distplot(train_thickness)
 sns.boxplot(x = train_thickness)
 ```
-
-    /usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-      warnings.warn(msg, FutureWarning)
-
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f94d11bad10>
-
-
-
-
-    
 ![png](/images/output_30_2.png)
     
 
@@ -553,17 +462,6 @@ sns.boxplot(x = train_thickness)
 ```python
 stats.probplot(train_thickness, dist="norm", plot=plt)
 ```
-
-
-
-
-    ((array([-3.25026118, -2.98902951, -2.8435044 , ...,  2.8435044 ,
-              2.98902951,  3.25026118]), array([0., 0., 0., ..., 1., 1., 1.])),
-     (0.2832983813539362, 0.5000353931302353, 0.9780603127735876))
-
-
-
-
     
 ![png](/images/output_31_1.png)
     
@@ -597,10 +495,6 @@ import xgboost as xgb
 ```python
 X_train.head(2)
 ```
-
-
-
-
 
   <div id="df-327263de-acf2-45b4-afff-ecc2ab68b57e">
     <div class="colab-df-container">
@@ -836,25 +730,9 @@ print("MAE: ", mean_absolute_error(ypred, y_test.values))
 ```python
 !pip install sweetviz
 ```
-
     Collecting sweetviz
       Downloading sweetviz-2.1.3-py3-none-any.whl (15.1 MB)
     [K     |████████████████████████████████| 15.1 MB 13.8 MB/s 
-    [?25hRequirement already satisfied: scipy>=1.3.2 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (1.4.1)
-    Requirement already satisfied: matplotlib>=3.1.3 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (3.2.2)
-    Requirement already satisfied: jinja2>=2.11.1 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (2.11.3)
-    Requirement already satisfied: numpy>=1.16.0 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (1.21.5)
-    Requirement already satisfied: tqdm>=4.43.0 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (4.63.0)
-    Requirement already satisfied: pandas!=1.0.0,!=1.0.1,!=1.0.2,>=0.25.3 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (1.3.5)
-    Requirement already satisfied: importlib-resources>=1.2.0 in /usr/local/lib/python3.7/dist-packages (from sweetviz) (5.4.0)
-    Requirement already satisfied: zipp>=3.1.0 in /usr/local/lib/python3.7/dist-packages (from importlib-resources>=1.2.0->sweetviz) (3.7.0)
-    Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/dist-packages (from jinja2>=2.11.1->sweetviz) (2.0.1)
-    Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.1.3->sweetviz) (1.3.2)
-    Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.1.3->sweetviz) (0.11.0)
-    Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.1.3->sweetviz) (3.0.7)
-    Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib>=3.1.3->sweetviz) (2.8.2)
-    Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas!=1.0.0,!=1.0.1,!=1.0.2,>=0.25.3->sweetviz) (2018.9)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.1->matplotlib>=3.1.3->sweetviz) (1.15.0)
     Installing collected packages: sweetviz
     Successfully installed sweetviz-2.1.3
 
@@ -868,13 +746,7 @@ report = sv.compare([X_train, "train data"], [X_test, "test data"])
 report.show_html()
 report.show_notebook(w="100%", h="full") # if working in colab
 ```
-
-
-                                                 |          | [  0%]   00:00 -> (? left)
-
-
     Report SWEETVIZ_REPORT.html was generated! NOTEBOOK/COLAB USERS: the web browser MAY not pop up, regardless, the report IS saved in your notebook/colab files.
-
 
 Click this link to see the output: <a href="https://kshitizregmi.github.io/_pages/SWEETVIZ_REPORT.html" title="Learn Markdown">Link SweetViz Output</a>
 
@@ -891,11 +763,3 @@ https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessin
 
 
 https://scikit-learn.org/stable/auto_examples/compose/plot_column_transformer_mixed_types.html#sphx-glr-auto-examples-compose-plot-column-transformer-mixed-types-py
-
-
-
-
-
-```python
-
-```
