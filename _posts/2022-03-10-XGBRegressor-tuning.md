@@ -356,7 +356,7 @@ for col in X_train.columns:
 
 
     
-![png](../images/output_13_7.png)
+![png](/images/output_13_7.png)
     
 
 
@@ -368,7 +368,7 @@ for col in X_train.columns:
 
 
     
-![png](../images/output_13_9.png)
+![png](/images/output_13_9.png)
     
 
 
@@ -468,7 +468,7 @@ sns.distplot(train_freq)
 
 
     
-![png](../images/output_22_2.png)
+![png](/images/output_22_2.png)
     
 
 
@@ -491,7 +491,7 @@ sns.heatmap(X_train.corr(), annot = True)
 
 
     
-![png](../images/output_25_1.png)
+![png](/images/output_25_1.png)
     
 
 
@@ -518,7 +518,7 @@ plt.show()
 
 
     
-![png](../images/output_29_0.png)
+![png](/images/output_29_0.png)
     
 
 
@@ -545,7 +545,7 @@ sns.boxplot(x = train_thickness)
 
 
     
-![png](../images/output_30_2.png)
+![png](/images/output_30_2.png)
     
 
 
@@ -565,7 +565,7 @@ stats.probplot(train_thickness, dist="norm", plot=plt)
 
 
     
-![png](../images/output_31_1.png)
+![png](/images/output_31_1.png)
     
 
 
