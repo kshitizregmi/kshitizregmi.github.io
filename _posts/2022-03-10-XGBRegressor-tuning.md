@@ -876,7 +876,7 @@ report.show_notebook(w="100%", h="full") # if working in colab
     Report SWEETVIZ_REPORT.html was generated! NOTEBOOK/COLAB USERS: the web browser MAY not pop up, regardless, the report IS saved in your notebook/colab files.
 
 
-Click this link to see the output: <a href="_pages/SWEETVIZ_REPORT.html" title="Learn Markdown">Link SweetViz Output</a>
+Click this link to see the output: <a href="https://kshitizregmi.github.io/_pages/SWEETVIZ_REPORT.html" title="Learn Markdown">Link SweetViz Output</a>
 
 # References
 
