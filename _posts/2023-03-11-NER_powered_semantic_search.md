@@ -223,10 +223,6 @@ nlp(text)
     CPU times: user 352 ms, sys: 144 ms, total: 497 ms
     Wall time: 494 ms
 
-
-
-
-
     [{'entity_group': 'PER',
       'score': 0.99895954,
       'word': 'Kshitiz',
@@ -309,34 +305,13 @@ all_ner = [item for first_batch in nlp_obj for item in first_batch]
 len(all_ner)
 ```
 
-
-
-
     50000
-
-
-
-
-```python
-# Extract entity
-# %%time
-# nlp_obj = nlp(title_text)
-```
-
-
-```python
-
-```
 
 
 ```python
 # example
 all_ner[0]
 ```
-
-
-
-
     [{'entity_group': 'MISC',
       'score': 0.68047166,
       'word': 'Lanx Credit Solution',
@@ -386,10 +361,6 @@ article_tags = [list(set(t + e)) for t, e in zip(tokens, ents)]
 ```python
 article_tags[0]
 ```
-
-
-
-
     ['Fico',
      'Lanx Credit Solution',
      'Money',
@@ -405,10 +376,6 @@ article_tags[0]
 ```python
 eval(dfs.authors[0]) , eval(dfs.tags[0]), ents[0]
 ```
-
-
-
-
     (['Todd Knight'],
      ['Covid 19', 'Covid 19 Update', 'Money', 'Homeless'],
      ['Lanx Credit Solution', 'Ellie Jones', 'Lanx Credit Solution', 'Fico'])
@@ -465,12 +432,7 @@ dim = model.encode(['My name is Kshitiz and I live in Kathmandu, Nepal.']).shape
 dim
 ```
 
-
-
-
     384
-
-
 
 
 ```python
@@ -634,12 +596,6 @@ query = "Tech Billionaires Snipe at Each Other on Social Media"
 res = semantic_search_tag_powered(query)
 ```
 
-
-```python
-# res
-```
-
-
 ```python
 recommendations = [item.get('id') for item in res['result']['matches']]
 ```
@@ -660,7 +616,6 @@ recommended_articles = inference_df[inference_df["article_id"].astype(str).isin(
 print(res['NER'])
 rec_with_tags = recommended_articles.title.values
 ```
-
     ['Social', 'Media']
 
 
@@ -668,10 +623,6 @@ rec_with_tags = recommended_articles.title.values
 ```python
 rec_with_tags
 ```
-
-
-
-
     array(['Social Media Is Making Us Miserable: Here’s What You Can Do About It',
            'Social Media on Identity Construction', 'SOCIAL MEDIA AUTOMATION',
            'The Positive Power of Social Media Influencers in 2020',
@@ -711,10 +662,6 @@ res_without_tags = semantic_search_only(query)
 ```python
 res_without_tags
 ```
-
-
-
-
     {'result': {'matches': [{'id': '187628', 'score': 0.563622653, 'values': []},
                   {'id': '11066', 'score': 0.543600857, 'values': []},
                   {'id': '164370', 'score': 0.523814619, 'values': []},
@@ -753,10 +700,6 @@ rec_without_tags = rec_articles_without_tags.title.values
 ```python
 len(rec_with_tags)
 ```
-
-
-
-
     15
 
 
@@ -765,10 +708,6 @@ len(rec_with_tags)
 ```python
 len(rec_without_tags)
 ```
-
-
-
-
     15
 
 
@@ -777,10 +716,6 @@ len(rec_without_tags)
 ```python
 rec_with_tags == rec_without_tags
 ```
-
-
-
-
     array([ True, False, False, False,  True, False, False, False, False,
            False, False, False, False, False, False])
 
@@ -790,10 +725,6 @@ rec_with_tags == rec_without_tags
 ```python
 rec_with_tags
 ```
-
-
-
-
     array(['Social Media Is Making Us Miserable: Here’s What You Can Do About It',
            'Social Media on Identity Construction', 'SOCIAL MEDIA AUTOMATION',
            'The Positive Power of Social Media Influencers in 2020',
@@ -813,10 +744,6 @@ rec_with_tags
 ```python
 rec_without_tags
 ```
-
-
-
-
     array(['Social Media Is Making Us Miserable: Here’s What You Can Do About It',
            'The Positive Power of Social Media Influencers in 2020',
            'Cyberpunk 2020', 'Tech’s Term Sheets of Harassment',
