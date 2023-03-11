@@ -13,7 +13,7 @@ tags:
   - multi-qa-MiniLM-L6-cos-v1, dslim/bert-base-NER
 ---
 
-# NER Powered Semantic Search
+
 
 In this tutorial, we will demonstrate how to utilize Named Entity Recognition (NER) powered semantic search with Pinecone. The following steps will be covered:
 
@@ -25,7 +25,8 @@ This technique can be advantageous if you want to limit the search results to re
 
 Let's begin.
 
-# Install Dependencies
+
+## Install Dependencies
 
 
 ```python
