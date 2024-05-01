@@ -8,16 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a TensorFlow certified developer and a machine learning engineer. In addition, I have two years of practical experience building end-to-end machine learning models adapted to many areas of industry, including supply chains and e-commerce.
-I specialise in ML domains like Natural Language Processing, Computer Vision, Deep Learning, and Recommendation Systems.
-
-Currently, I am working on Fusemachines Nepal as a machine learning engineer. Previously, I worked as an AI intern at OYA INC, where I developed a recommendation system. Furthermore, I have skills in python and its machine learning libraries like NumPy, pandas, scikit-learn, Tensorflow, Keras, spaCy, NLTK, OpenCV, Elastic Search, etc. along with web frameworks like Flask and databases like SQL and MongoDB.
+Almost 5 years of architecting and deploying impactful AI/DL solutions, I leverage cutting-edge NLP, semantic search, and ML/DL models (Python, Pandas, Scikit-learn, TensorFlow, Keras, GCP) to craft end-to-end solutions that solve real-world problems and drive business growth. My passion lies in seeing my solutions deliver tangible results, like the INMA award-winning personalized news recommender system.  I am excited to translate technical expertise into tangible business value, consistently exceeding expectations.
 
 
 # Research Interest
 
 - Machine Learning/Deep Learning
-- Computer Vision
+- Recommendation systems
 - Natural Language Processing
 
 
