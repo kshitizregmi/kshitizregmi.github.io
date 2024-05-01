@@ -25,9 +25,13 @@ Work Experience
 Skills
 ======
 **Programming Languages:** Python, C++, Java  
+
 **Libraries and Frameworks:** Numpy, Pandas, Matplotlib, Seaborn, Plotly, SciPy, SymPy, Scikit-learn, SpaCy, NLTK, Tensorflow, Keras, FastAPI, streamlit, ChromaDB, Palm2, Gemini  
+
 **Database:** MYSQL, MongoDB, BigQuery, Oracle
+
 **MLOps and Cloud Deployment:** GCP, Cloud Run, Compute Engine, Cloud Functions, VertexAI, Discovery Engine AI for media and Retail, Cloud build, Triggers, Load balancer, Cloud Schedulers, GCS bucket, Datastore,AWS Lambda, Sagemaker notebook instance, S3 buckets
+
 **Version Control System:** Git, GitHub
 
 
