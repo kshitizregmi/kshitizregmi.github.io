@@ -7,12 +7,12 @@ venue: "Purwanchal Campus Institute of Engineering"
 date: 2024-01-01
 location: "Dharan, Sunsari"
 ---
-
-As a tutor, I'm thrilled to share that I recently led a dynamic 7-day AI/ML bootcamp at Tribhuvan University, IOE, Purwanchal Campus . Throughout the program, participants delved into practical, hands-on training within a comprehensive learning environment, resulting in their successful completion. It was a rewarding experience witnessing their growth. Thank you everybody who directly or indirectly helped to make it successful. 🙏 
-
 <img src="../images/ai-ml-home.jpeg">
 
 [More](https://www.linkedin.com/posts/kshitizregmi_as-a-tutor-im-thrilled-to-share-that-i-activity-7149789327433048064-2qjz)
+
+As a tutor, I'm thrilled to share that I recently led a dynamic 7-day AI/ML bootcamp at Tribhuvan University, IOE, Purwanchal Campus . Throughout the program, participants delved into practical, hands-on training within a comprehensive learning environment, resulting in their successful completion. It was a rewarding experience witnessing their growth. Thank you everybody who directly or indirectly helped to make it successful. 🙏 
+
 
 <img src="../images/day1-1.jpg">
 
