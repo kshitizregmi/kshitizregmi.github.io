@@ -1,7 +1,7 @@
 ---
 title: "AI/ML Bootcamp"
 collection: teaching
-type: "Workshop"
+type: "Volunteering AI/ML Bootcamp"
 permalink: /teaching/ai-ml-bootcamp-dharan
 venue: "Purwanchal Campus Institute of Engineering"
 date: 2024-01-01
