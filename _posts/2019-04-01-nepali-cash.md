@@ -13,6 +13,7 @@ tags:
   - Nepali note classification
 ---
 This project aims to detect and recognize Nepali cash using transfer learning and the InceptionV3 model. The model achieved 93.03% accuracy on both test and validation data.
+[Last updated: 2023 with more class and dataset]
 
 ## Nepali Cash Detection and Recognition Using Transfer Learning and InceptionV3
 
