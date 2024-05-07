@@ -1,7 +1,7 @@
 ---
 title: 'Nepali Cash Detection and Recognition using Tensorflow and CNN'
 date: 2019-04-01
-permalink: /posts/2021/08/tf-regression/
+permalink: /posts/2019/04/nepali-cash-detection-recognition/
 tags:
   - Classification
   - CNN
