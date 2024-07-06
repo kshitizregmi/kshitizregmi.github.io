@@ -1,5 +1,5 @@
 ---
-title: 'Mean Can Lie: Discover the Real Insights with Standard Deviation'
+title: 'Mean Can Lie: Discover the Real Insights with Mean and Standard Deviation'
 date: 2024-07-06
 permalink: /posts/2024/07/mean_and_std/
 tags:
