@@ -11,9 +11,10 @@ tags:
 ---
 
 
+The mean, often referred to as the average, is a measure of central tendency that summarizes a set of values into a single number. 
 ## Mean
 
-The mean, often referred to as the average, is a measure of central tendency that summarizes a set of values into a single number. It represents the central point of the dataset and is calculated by dividing the sum of all values by the number of values in the dataset.
+It represents the central point of the dataset and is calculated by dividing the sum of all values by the number of values in the dataset.
 
 Formula:
 
@@ -80,9 +81,7 @@ $$
 $$
 
 ### Sample Standard Deviation
-$$
-s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \overline{x})^2}
-$$
+$$s = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \overline{x})^2}$$
 
 ## Normal Distribution
 
@@ -106,8 +105,7 @@ sns.histplot(x, kde=True)
 
 
 
-    
-<img src="../images/output_9_1.png">    
+<img src="https://raw.githubusercontent.com/kshitizregmi/kshitizregmi.github.io/master/images/output_9_1.png">    
 
     
 
@@ -138,8 +136,7 @@ plt.show()plt.axvline(mean_value, color='r', linestyle='--', label=f'Mean: {mean
 ```
 
 
-    
-<img src="../images/output_12_0.png">    
+<img src="https://raw.githubusercontent.com/kshitizregmi/kshitizregmi.github.io/master/images/output_12_0.png">  
 
     
 
@@ -190,8 +187,7 @@ plt.legend()
 plt.show()
 ```
 
-
-<img src="../images/output_16_0.png">    
+<img src="https://raw.githubusercontent.com/kshitizregmi/kshitizregmi.github.io/master/images/output_16_0.png">  
 
 
 
